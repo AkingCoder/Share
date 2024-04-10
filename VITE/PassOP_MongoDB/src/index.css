@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sitehover:hover{
+    #edithover{
+        left: 12vw;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+    }
+}
+@media (max-width:1270px) {
+    #sitehover:hover{
+        #edithover{
+            left: 11vw;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        }
+    }
+}
+@media (max-width:970px) {
+    #sitehover:hover{
+        #edithover{
+            left: 10vw;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        }
+    }
+}
+@media (max-width:755px) {
+    #sitehover:hover{
+        #edithover{
+            left: 9vw;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        }
+    }
+}
+@media (max-width:646px) {
+    #sitehover:hover{
+        #edithover{
+            left: 8vw;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        }
+    }
+}
