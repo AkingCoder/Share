@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            background-color: aqua;
+            height: 80vh;
+            width: 100vw;
+        }
+        .ball{
+            align-self: end;
+            background-color: red;
+            border-radius: 50%;
+            height: 16vh;
+            width: 8vw;
+            animation: moveY 3s cubic-bezier(0.23, 1.38, 0.77, 1.26) 1s,
+                       moveX 3s linear 1s ,
+                       moveYY 3s cubic-bezier(0.23, 1.38, 0.77, 1.26) 4s ,
+                       moveXX 3s linear 4s ,
+                       moveYYY 3s cubic-bezier(0.23, 1.38, 0.77, 1.26) 7s ,
+                       moveXXX 3s linear 7s ,
+                       moveYYYY 3s cubic-bezier(0.23, 1.38, 0.77, 1.26) 10s ,
+                       moveXXXX 3s linear 10s ;
+                       
+        }
+        @keyframes moveY {
+            from{
+            }
+            to{
+                transform: translateY(-300px);
+            }
+        }
+        @keyframes moveYY {
+            from{
+                transform: translateX(300px);
+            }
+            to{
+                transform: translateX(300px) translateY(-300px);      
+            }
+        }
+        @keyframes moveYYY {
+            from{
+                transform: translateX(600px);
+            }
+            to{
+                transform: translateX(600px) translateY(-300px);      
+            }
+        }
+        @keyframes moveYYYY {
+            from{
+                transform: translateX(900px);
+            }
+            to{
+                transform: translateX(900px) translateY(-300px);      
+            }
+        }
+        @keyframes moveX {
+            from{
+
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+        @keyframes moveXX {
+            from{
+        
+            }
+            to{
+                transform: translateX(600px);
+            }
+        }
+        @keyframes moveXXX {
+            from{
+        
+            }
+            to{
+                transform: translateX(900px);
+            }
+        }
+        @keyframes moveXXXX {
+            from{
+        
+            }
+            to{
+                transform: translateX(1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

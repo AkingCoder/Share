@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition like animation</title>
+    <style>
+        .container{
+            background-color: rgb(39, 60, 116);
+            height: 50vh;
+            width: 40vw;
+        }
+        .box{
+            background-color: rgb(2, 216, 20);
+            height: 5vh;
+            width: 4vw;
+            transition:transform  3s cubic-bezier(0.36, -0.25, 0, 2.07);;
+        }
+        .item{
+            transform: translateX(220px) translateY(120px) scale(2);
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item"></div>
+    </div>
+</body>
+</html>

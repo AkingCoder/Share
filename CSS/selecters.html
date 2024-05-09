@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTERS</title>
+    <style>
+        /*ELEMENT SELECTERS*/
+        div{
+            background-color: red;
+        }
+        /*CLASS SELECTER*/
+        .maroon{
+            background-color: maroon;
+        }
+        /*ID SELECTER*/
+        #brown{
+            background-color:brown;
+        }
+        /*CHILD SELECTER*/
+        div > p{
+            background-color: blueviolet;
+        }
+        /* DESCENDANT SELECTER*/
+        div p{
+            background-color: darkcyan;
+        }
+        /*UNIVERSAL SELECTER*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        /*PSEUDO SELECTER*/
+        a:visited{
+            background-color:violet;
+        }
+        a:link{
+            background-color:aqua;
+        }
+        a:hover{
+            background-color: antiquewhite;
+        }
+        a:active{
+            background-color:red;
+        }
+        p:first-child{
+            background-color: rgb(105, 99, 110);
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        This is element selecter
+    </div>
+    <div class="maroon">
+        This is class selecter
+    </div>
+    <div id="brown">
+        This is ID selecter
+    </div>
+    </div>
+    <div>
+        <P>
+            This is child selecter
+        </P>
+    </div>
+    <div>
+        <span>
+            <P>
+                This is descendant selecter
+            </P>
+        </span>
+    </div>
+    <div>
+        <p>
+            this is firstchild selecter in pseudo selecter
+        </p>
+        <p>
+            this is firstchild selecter in pseudo selecter
+        </p>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.instagarm.com">Instagarm</a>
+    
+</body>
+</html>

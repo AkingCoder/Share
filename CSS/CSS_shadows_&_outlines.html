@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow & text shadow</title>
+    <style>
+        *{
+            text-shadow: 5px 4px 5px;
+            font-size: 20px;
+            color: purple;
+            border-radius: 4px;
+        }
+        .box{
+            border: 2px solid maroon;
+            padding: 0;
+            box-shadow: 1px 5px 10px maroon;
+        }
+        .element{
+            outline: 2px solid purple;
+            outline-offset: 5px;
+            box-shadow: -2px -1px 8px 3px maroon;
+            border: 2px solid;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Here is shadow
+    </div>
+    <div>
+        <p class="element">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime in doloribus obcaecati reprehenderit eligendi voluptates, veniam laudantium praesentium error repellendus ad inventore recusandae.
+        </p>
+    </div>
+</body>
+</html>

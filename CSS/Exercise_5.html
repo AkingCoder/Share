@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+    <style>
+        :root{
+            --mycolor:rgb(20, 16, 73);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tem{
+            border: 2px solid black;
+            height: 30px;
+            position: sticky;
+            top: 0px;
+            background-color: var(--mycolor);
+            color: white;
+            z-index: 2;
+        }
+        .tem ul li{
+            padding-left: 30px;
+            position: relative;
+            top: -13px;
+            
+        }
+        body{
+            background-color: rgb(163, 154, 190);
+        }
+
+
+        .parent{
+            border: 2px solid black;
+            height:220vh;
+            box-sizing: border-box;
+            display: grid;
+            position: relative;
+             
+                     
+        }
+        .main_body{
+            border: 2px solid black;
+            position: relative;
+            height: 397px;
+            margin: 15px;
+            top: 30px;
+            padding: 50px;
+            background-color: rgb(15, 146, 69);  
+        }
+        .box1{
+            border: 2px solid black;
+            height: 60vh;
+            width: 90vh;
+            background-color: rgb(83, 189, 13);       
+        }
+        .box2{
+            border: 2px solid black;
+            height: 60vh;
+            width: 90vh;
+            position: relative;
+            top: -389px;
+            left: 640px;  
+            background-color: rgb(172, 120, 214);      
+        }
+        .content{
+            border: 2px solid black;
+            align-self:center;
+            height: 300px;
+            width: 70vw;
+            margin-left: 15%;
+            border-radius: 40px;
+            position: relative;
+            top:40px;
+            background-color: rgb(44, 18, 87);
+            color: aliceblue;
+        }
+        .foot{
+            border: 2px solid black;
+            height: 10vh;
+            margin-top: 500px;
+            align-self:flex-end;
+            background-color: rgb(209, 178, 140);
+            
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        ul li{
+            padding: 15px;
+            margin: 4px;
+            position: relative;
+            font-weight: bolder;
+            left: -30px;
+        }
+        a:link{
+            text-decoration: none;
+            
+
+        }
+        a{
+            color:black;
+        }
+        .logo > img{
+            position: fixed;
+            left: 1240px;
+            top: 550px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tem">
+        <ul>
+            <li>Home</li>
+            <li>Other Webpages</li>
+            <li>Contact</li>
+            <li>Help&Support</li>
+            <li>Other Details</li>
+        </ul>
+    </div>
+    <div class="parent">
+        <div class="top">
+        <div class="main_body">
+            <div class="inner box1"></div>
+            <div class="inner box2"></div>
+
+        </div>
+        </div>
+        <div class="content"><p><h1 style="padding-left:15px;">Welcome Harry Bhai, Thanks For Visiting My Website</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium voluptas possimus tenetur optio, quidem neque deleniti quisquam reprehenderit corporis nemo assumenda maiores tempora a sed laboriosam culpa mollitia dolorem facere labore. Enim accusantium assumenda, explicabo porro quasi nobis blanditiis sunt odio quo in nisi praesentium eum eaque dolorum nemo dicta debitis rem sequi numquam alias magni reiciendis. Totam, voluptate magnam? Dolore ullam sequi dolor quidem cupiditate accusamus fuga veniam obcaecati unde, doloremque, ea deleniti quam ipsam assumenda. Possimus quidem soluta minima. Deserunt reiciendis dolore quam, esse inventore aliquam nemo quas quasi quibusdam rerum expedita alias distinctio vel eligendi dolor vitae aperiam libero fuga, voluptatem debitis corrupti, laborum at aspernatur. Illum dignissimos, hic vero ducimus fuga dolorum reprehenderit ipsum dolor deserunt amet totam aliquid accusamus sed veniam tenetur nesciunt unde quaerat nisi ullam. Tenetur magnam non debitis atque placeat quidem voluptas id, ipsum quos, nostrum voluptates minima dolores saepe exercitationem!</p></div>
+        <div class="logo"><img style="width: 10%;" src="Hindu.png" alt="Logo" ></div>
+        <div class="foot">
+            <footer>
+                <ul>
+                    <img src="Facebook New 2023 Icon.png" alt="Facebook" width="6%" style="position: relative; bottom:5px" >
+                    <li><a href="#">Facebook</a></li>
+                    <img style="position:relative; left:-20px; top:10px" src="—Pngtree—twitter social media round icon_8704823.png" alt="Twitter" width="35px" height="38px" >
+                    <li ><a href="#">Twitter</a></li>
+                    <img style="position:relative; left:-20px; top:10px" src="vecteezy_instagram-icon-logo-png_17743717_547 (1).png" alt="Instagram" width="35px" height="38px" >
+                    <li><a href="#">Instagram</a></li>
+                    <img style="position:relative; left:-10px; top:-5px" src="vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930480_161.png" alt="Linked In" width="60px" height="65px" >
+                    <li><a href="#">Linked In</a></li>
+                    <li>&#169;CopyRight</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(115, 78, 150);
+            height: 50vh;
+            width:40vw;
+        }
+        .box{
+            height: 5vh;
+            width: 4vw;
+            background-color: rgb(214, 144, 15);
+            /*animation-name:anand ;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-delay:1s;
+            animation-direction:alternate;*/
+            /*animation-play-state: paused;*/
+            animation: anand 3s ease-in-out 3 alternate ,
+                       anand2 2s ease-in-out 3 alternate 6s ;
+        }
+        @keyframes anand {
+            from{
+                background-color: rgb(214, 144, 15);
+            }
+            to{
+                background-color: red;
+                transform: translate(200px,120px) rotate(360deg);
+            }
+
+        }
+        @keyframes anand2 {
+            10%{
+                transform: scale(0.3);
+            }
+            30%{
+                transform: scale(0.7);
+            }
+            50%{
+                transform: scale(1);
+            }
+            70%{
+                transform: scale(1.5);
+            }
+            90%{
+                transform: scale(2);
+            }
+            100%{
+                transform: scale(2.5);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Basic CSS for the navbar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect to change the body color */
+nav:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+
+nav:hover ul li a {
+    color: #fff; /* Change the link color on hover */
+}

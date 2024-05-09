@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable assigned</title>
+    <style>
+        :root{
+            --mycolor: hotpink;
+            --myseccolor:lightpink;
+        }
+        div{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: var(--mycolor,aqua);
+        }
+        span{
+                border: 2px solid black;
+                margin: 1px;
+                padding: 10px;
+                background-color: var(--myseccolor,rgb(15, 128, 128));
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>Home</span>
+        <span>Contact</span>
+        <span>Details</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui molestias perspiciatis reprehenderit tenetur eaque laudantium tempore dolor est, voluptate veritatis officiis provident omnis. Harum eveniet delectus vel nemo laboriosam qui autem?</p>
+    </div>
+</body>
+</html>

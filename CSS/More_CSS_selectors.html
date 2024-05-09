@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS selectors</title>
+    <style>
+        p:first-child{
+            color:blueviolet;
+        }
+        p::first-line{
+            color: rgb(247, 151, 7);
+        }
+        p::first-letter{
+            color: rgb(64, 180, 40);
+        }
+        div *{
+            border: 2px solid black;
+        }
+        ::selection{
+            color: rgb(0, 255, 0);
+            background-color: black;
+        }
+        input::placeholder{
+            color: rgb(247, 0, 255);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione id dicta nesciunt reiciendis tempora sequi at exercitationem sit voluptate. Molestiae, impedit qui. adipisicing elit. Odio, adipisci?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias.</p>
+        <input type="text" placeholder="Enter Name">
+    </div>
+</body>
+</html>

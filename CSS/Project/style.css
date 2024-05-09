@@ -1,0 +1,303 @@
+* {
+    padding:0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+.main {
+    background-image: url("img/background.jpg");
+    height: 110vh;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+}
+
+.main .shadeBox {
+    background-color: rgba(0, 0, 0, 0.459);
+    box-shadow: inset 0px -20px 150px 20px rgb(0, 0, 0), 
+                inset 0px 25px 100px 3px rgb(0, 0, 0);
+    height: 110vh;
+    width: auto;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 74vw;
+    padding-top: 30px;
+    margin: auto;
+
+}
+
+.logo img {
+    display: flex;
+    height: 40px;
+}
+
+.buttons :nth-child(1) {
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(2, 2, 2, 0.349);
+    
+}
+
+.buttons :nth-child(2) {
+    position: relative;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgba(2, 2, 2, 0.349);
+    padding: 5px;
+    bottom: 2px;
+    left: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+
+}
+.top-content{
+    position: relative;
+    display: grid;
+    color:white;
+    columns: 1fr 1fr 1fr 1fr;
+    top: 170px;
+    align-content: center;
+    justify-items: center;
+}
+.top-content :nth-child(1){
+    font-weight: bolder;
+    font-size: 50px;
+}
+.top-content :nth-child(2){
+    font-weight: bolder;
+    font-size: 45px;
+}
+.top-content :nth-child(3){
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+    font-size: 26px;    
+}
+.top-content :nth-child(4){
+    position: relative;
+    top: 25px;
+    font-weight: 400;
+    font-size: 22px;    
+}
+.login input{
+    position: relative;
+    top: 213px;
+    left: 360px;
+    height: 53px;
+    width: 385px;
+    border-radius: 4px;
+    background-color: rgba(19, 18, 18, 0.801);
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    color: white;
+    font-size: 18px;  
+    padding-left: 15px;
+    padding-bottom: 4px;
+
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.781);
+}
+.login{
+    display: flex;
+    column-gap: 10px;
+}
+.login button{
+    position: relative; 
+    top: 213px;
+    left: 360px;
+    height: 59px;
+    width: 200px;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgba(2, 2, 2, 0.349);
+    padding-bottom: 5px;
+    font-size: 26px;
+
+}
+.login button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 1, 1);
+}
+.sepration{
+    background-color: rgb(53, 52, 52);
+    height: 5px;
+    width: 1348px;
+}
+body{
+    background-color: black;
+    padding: 110px;
+}
+
+
+
+.content .details{
+    color: white;
+    display: grid;
+    position: relative;
+    left: 160px;
+    top: 143px;
+    max-width: 500px;
+}
+.details :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 18px;
+}
+.details :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tv img{
+    position: relative;
+    height: 370px;
+    bottom: 113px;
+    left: 700px;
+    z-index: 10;
+
+}
+.tv video{
+    position: relative;
+    height:204px;
+    top: -205px;
+    left: 270px;
+}
+.tv_2 img{
+    position: relative;
+    top: 65px;
+    left: 142px;
+}
+.details_2 :nth-child(1){
+    position: relative;
+    bottom: 409px;
+    left: 500px;
+}
+.details_2 :nth-child(2){
+    position: relative;
+    bottom: 409px;
+    left: 500px;
+}
+.tv_3 video{
+    position: relative;
+    top: -267px;
+    height: 172px;
+    left: 294px;
+}
+.tv_4 img{
+    position: relative;
+    top: 65px;
+    left: 142px;
+}
+.details_4 :nth-child(1){
+    position: relative;
+    bottom: 409px;
+    left: 500px;
+}
+.details_4 :nth-child(2){
+    position: relative;
+    bottom: 409px;
+    left: 500px;
+}
+.FAQ{
+    display: grid;
+    color:#ffffff;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 30px;   
+}
+ul li{
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 400;
+    width: 900px;
+    margin-left: 200px;
+    padding: 30px;
+    background-color:#2d2d2d;
+    display: flex;
+    justify-content: space-between;
+}
+.FAQ h2{
+    padding-top: 80px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+.FAQ .sepration{
+    background-color: black;
+    height: 10px;
+}
+ul .add{ 
+    filter: invert(1);
+       
+}
+.second_login{
+    position: relative;
+    display: grid;
+    top: 40px;
+}
+.second_login div{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.second_login input{
+    top: 20px;
+}
+.second_login button{
+    left: 770px;
+    top: -39px;
+}
+.footer{
+    color: #c4bcbc;
+    padding-left: 170px;    
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.footer h4{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+a:link{
+    color: #c9c5c5;
+}
+.language .buttons{
+    position: relative;
+    padding-top: 30px;
+    right:4px ;
+}
+.footer>span{
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    top: 20px;
+    right:2px;
+    padding-bottom: 100px;
+}
